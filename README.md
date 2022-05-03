@@ -7,4 +7,5 @@ Você pode usar os botões do teclado para tocar a música ou pressionar os bot�
 
 # Importante
 Tente não usar vários botões de uma vez;
+
 A música pode estar meio alta, então, se necessário, diminua o som do navegador. 
