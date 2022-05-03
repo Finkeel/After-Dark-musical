@@ -16,7 +16,7 @@ const ETERNAL_BLISS= new Audio("./audio/To eternal bliss.mp3");
 const GLAD_KNOW= new Audio("./audio/I'm so glad to know.mp3");
 
 //Criando um mapa para os botões do teclado:
-const orderedAudioObject = {
+const ordemAudioObjeto = {
     a: HOW_PLEASANT,
     b: THE_MOMENT,
     c: I_MISSED_YOU,
@@ -31,13 +31,12 @@ const orderedAudioObject = {
     l: HOW_IT_FEELS,
     m: PATIENT_LIPS,
     n: ETERNAL_BLISS,
-    o: GLAD_KNOW,
+    o: GLAD_KNOW,   
 }
 
-
-function ativarAudioAoApertar(botão){
-    if (orderedAudioObject[botão])
-        orderedAudioObject[botão].play();
+function ativarAudioAoApertar(key){
+    if (ordemAudioObjeto[key])
+        ordemAudioObjeto[key].play();
 }
 
 //Ativando o áudio quando o botão do teclado é pressionado
@@ -48,10 +47,11 @@ window.addEventListener("keydown", function (e){
 
 //Ativando o áudio quando o mouse passa por cima do botão
 
+/*
 const botoesMusicais = document.querySelectorAll("ul li button");
 
 for(let x = 0; x < botoesMusicais.length; x++){
     const botaoAtual = botoesMusicais[x];
-    const botao = botaoAtual.getAttribute("data-key");
-    botaoAtual.addEventListener("click", ativarAudioAoApertar.bind(this, botao))
-}
+    const key = botaoAtual.getAttribute("data-key");
+    botaoAtual.addEventListener("click", ativarAudioAoApertar.bind(this, key))
+} */
