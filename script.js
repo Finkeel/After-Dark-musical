@@ -44,3 +44,10 @@ window.addEventListener("keydown", function (e){
     const botaoAtivado = e.key.toLowerCase();
     ativarAudioAoApertar(botaoAtivado);
 })
+
+//Ativando o áudio quando o botão do mouse é pressionado
+for(let x = 0; x < botoesMusicais.length; x++){
+    const botaoAtual = botoesMusicais[x];
+    const key = botaoAtual.getAttribute("data-key");
+    botaoAtual.addEventListener("click", ativarAudioAoApertar.bind(this, key));
+}
