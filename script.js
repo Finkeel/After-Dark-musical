@@ -49,5 +49,5 @@ window.addEventListener("keydown", function (e){
 for(let x = 0; x < botoesMusicais.length; x++){
     const botaoAtual = botoesMusicais[x];
     const key = botaoAtual.getAttribute("data-key");
-    botaoAtual.addEventListener("click", ativarAudioAoApertar.bind(this, key));
+    botaoAtual.addEventListener("click", ativarAudioAoApertar.bind(this,key));
 }
