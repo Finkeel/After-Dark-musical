@@ -47,11 +47,11 @@ window.addEventListener("keydown", function (e){
 
 //Ativando o áudio quando o mouse passa por cima do botão
 
-/*
+
 const botoesMusicais = document.querySelectorAll("ul li button");
 
 for(let x = 0; x < botoesMusicais.length; x++){
     const botaoAtual = botoesMusicais[x];
     const key = botaoAtual.getAttribute("data-key");
     botaoAtual.addEventListener("click", ativarAudioAoApertar.bind(this, key))
-} */
+}
